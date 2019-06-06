@@ -189,7 +189,7 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  padding: 3rem 11rem 3rem 0;
+  padding: 3rem 12rem 1rem 0;
 }
 .topNav h2 {
   padding-left: 9rem;
@@ -200,7 +200,10 @@ header {
   align-content: center;
 }
 .subNav a {
-  padding-left: 3rem;
+  padding-left: 4rem;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #212529;
 }
 .footer {
   width: 100%;
@@ -258,4 +261,7 @@ header {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.destination button {
+  background-color: #17A2B8;
 }
