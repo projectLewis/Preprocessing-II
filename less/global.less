@@ -15,23 +15,49 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: @largeFontH1;
+  .tablet({
+    font-size: @mediumFontH1;
+  });
+  .mobile({
+    font-size: @smallFontH1;
+  });
 }
 
 h2 {
-  font-size: 3.2rem;
+  font-size: @largeFontH2;
   padding-bottom: 10px;
+  .tablet({
+    font-size: @mediumFontH2;
+  });
+  .mobile({
+    width: 100%;
+    text-align: center;
+    font-size: @smallFontH2;
+  });
 }
 
 h4 {
-  font-size: 2.5rem;
+  font-size: @largeFontH4;
   padding-bottom: 10px;
+  .tablet({
+    font-size: @mediumFontH4;
+  });
+  .mobile({
+    font-size: @smallFontH4;
+  });
 }
 
 p {
   line-height: 1.5;
-  font-size: 1.6rem;
+  font-size: @largeFont;
   padding-bottom: 10px;
+  .tablet({
+    font-size: @mediumFont;
+  });
+  .mobile({
+    font-size: @smallFont;
+  });
 }
 
 img {
@@ -39,8 +65,25 @@ img {
   height: auto;
 }
 
+#viewSettings {
+  .tablet({
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+  });
+  .mobile({
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+  });
+}
+
 .container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
+  padding: 0 @paddingSides;
+  .tablet({
+    padding: 0 @paddingSidesMed;
+  });
+  .mobile({
+    padding: 0 @paddingSidesSm;
+  });
 }

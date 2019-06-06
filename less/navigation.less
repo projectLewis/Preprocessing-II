@@ -1,1 +1,64 @@
 // Navigation Styles here
+header {
+        // border-bottom: 2px dashed @navigation-border;
+        .borderBottom();
+        .mobile({
+            .borderBottomSm();
+        })
+}
+.topNav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: @paddingVert @paddingSides+3rem 1rem 0;
+        .tablet({
+            padding: @paddingVert @paddingSidesMed+3rem 1rem 0;
+        });
+        .mobile({
+        flex-wrap: wrap;
+        // justify-content: space-evenly;
+        padding: 1rem @paddingSidesSm 1rem 0;
+    });
+    h2 {
+        padding-left: @paddingSides;
+        .tablet({
+            padding-left: @paddingSidesMed;
+        });
+        .mobile({
+            padding-left: 0;
+        });
+    }
+    a:hover {
+        animation: rock 400ms infinite ease-in-out;
+        @keyframes rock {
+            0%, 100% { transform: rotate(-10deg); }
+            20% {transform:scale(.95);}
+            50% { transform: rotate(10deg); }
+            80% {transform:scale(.95);}
+          }
+    }
+}
+.subNav {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+      .mobile({
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 8% 0 8%;
+      });
+        a {
+            padding-left: 4rem;
+            font-size: @largeFont;
+            text-decoration: none;
+            color: @font-color;
+            .tablet({
+                font-size: @mediumFont;
+                padding-left: 2rem;
+              });
+              .mobile({
+                font-size: @smallFont;
+                padding-left: 0rem;
+              });
+        }
+}
