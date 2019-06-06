@@ -2,7 +2,7 @@
 header {
         // border-bottom: 2px dashed @navigation-border;
         .borderBottom();
-        .smallSize({
+        .mobile({
             .borderBottomSm();
         })
 }
@@ -11,20 +11,20 @@ header {
     justify-content: space-between;
     flex-wrap: nowrap;
     padding: @paddingVert @paddingSides+3rem 1rem 0;
-        .mediumSize({
+        .tablet({
             padding: @paddingVert @paddingSidesMed+3rem 1rem 0;
         });
-        .smallSize({
+        .mobile({
         flex-wrap: wrap;
         // justify-content: space-evenly;
         padding: 1rem @paddingSidesSm 1rem 0;
     });
     h2 {
         padding-left: @paddingSides;
-        .mediumSize({
+        .tablet({
             padding-left: @paddingSidesMed;
         });
-        .smallSize({
+        .mobile({
             padding-left: 0;
         });
     }
@@ -33,7 +33,7 @@ header {
     display: flex;
     justify-content: flex-end;
     align-content: center;
-      .smallSize({
+      .mobile({
         width: 100%;
         justify-content: space-between;
         padding: 0 8% 0 8%;
@@ -43,11 +43,11 @@ header {
             font-size: @largeFont;
             text-decoration: none;
             color: @font-color;
-            .mediumSize({
+            .tablet({
                 font-size: @mediumFont;
                 padding-left: 2rem;
               });
-              .smallSize({
+              .mobile({
                 font-size: @smallFont;
                 padding-left: 0rem;
               });

@@ -1,11 +1,11 @@
 // Mixins in here
-.largeSize(@rules) {
+.default(@rules) {
     @media screen and (min-width: 801px) {@rules(); }
 }
-.mediumSize(@rules) {
+.tablet(@rules) {
     @media screen and (max-width: 800px) {@rules(); }
 }
-.smallSize(@rules) {
+.mobile(@rules) {
     @media screen and (max-width: 500px) {@rules(); }
 }
 // borders

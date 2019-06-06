@@ -16,10 +16,10 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-size: @largeFontH1;
-  .mediumSize({
+  .tablet({
     font-size: @mediumFontH1;
   });
-  .smallSize({
+  .mobile({
     font-size: @smallFontH1;
   });
 }
@@ -27,10 +27,10 @@ h1 {
 h2 {
   font-size: @largeFontH2;
   padding-bottom: 10px;
-  .mediumSize({
+  .tablet({
     font-size: @mediumFontH2;
   });
-  .smallSize({
+  .mobile({
     width: 100%;
     text-align: center;
     font-size: @smallFontH2;
@@ -40,10 +40,10 @@ h2 {
 h4 {
   font-size: @largeFontH4;
   padding-bottom: 10px;
-  .mediumSize({
+  .tablet({
     font-size: @mediumFontH4;
   });
-  .smallSize({
+  .mobile({
     font-size: @smallFontH4;
   });
 }
@@ -52,10 +52,10 @@ p {
   line-height: 1.5;
   font-size: @largeFont;
   padding-bottom: 10px;
-  .mediumSize({
+  .tablet({
     font-size: @mediumFont;
   });
-  .smallSize({
+  .mobile({
     font-size: @smallFont;
   });
 }
@@ -66,18 +66,12 @@ img {
 }
 
 #viewSettings {
-  // .largeSize({
-  //   max-width: 1000px;
-  //   width: 100%;
-  //   margin: 0 auto;
-  //   background-color: red;
-  // });
-  .mediumSize({
+  .tablet({
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
   });
-  .smallSize({
+  .mobile({
     max-width: 500px;
     width: 100%;
     margin: 0 auto;
@@ -86,10 +80,10 @@ img {
 
 .container {
   padding: 0 @paddingSides;
-  .mediumSize({
+  .tablet({
     padding: 0 @paddingSidesMed;
   });
-  .smallSize({
+  .mobile({
     padding: 0 @paddingSidesSm;
   });
 }
