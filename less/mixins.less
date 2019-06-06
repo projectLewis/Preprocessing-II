@@ -1,5 +1,5 @@
 // Mixins in here
-.default(@rules) {
+.largeSize(@rules) {
     @media screen and (min-width: 801px) {@rules(); }
 }
 .tablet(@rules) {
@@ -20,4 +20,23 @@
 }
 .borderTopSm() {
     border-top: @borderSizeSm @borderStyleSm @navigation-border;
+}
+
+.btnNormal() {
+    text-align: center;
+    background-color: @btnColor;
+    border-style: none;
+    border-radius: 10px;
+    padding: 1rem 4rem;
+    color: @white;
+    font-size: @largeFont;
+    a {
+        text-decoration: none;
+        color: @white;
+      }
+    .mobile({
+    background-color: @button-bg;
+    font-size: 1.1rem;
+    padding: .8rem 5;
+    })
 }
