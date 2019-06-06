@@ -77,14 +77,6 @@
       flex-wrap: wrap;
       justify-content: center;
     });
-
-    .destination {
-      width: 30%;
-      margin-bottom: 30px;
-      .smallSize({
-        width: 80%;
-      })
-    }
   }
 }
 .topSection {
@@ -95,17 +87,30 @@
 }
 // ##TODO adjust padding on mobile
 .destination {
-  button {
+  width: 30%;
+  margin-bottom: 30px;
+  .smallSize({
+    width: 80%;
+  });
+  .button {
+    // justify-content: center;
+    text-align: center;
     background-color: @btnColor;
     border-style: none;
-    border-radius: 5%;
+    border-radius: 10px;
     padding: 1rem 4rem;
     color: @white;
     font-size: @largeFont;
+      a {
+        text-decoration: none;
+        color: @white;
+      }
       .smallSize({
+        // width: 50%;
         background-color: @button-bg;
-        font-size: @smallFont;
-        padding: .2rem 2rem;
+        font-size: 1.1rem;
+        padding: .8rem 5;
+        // border-radius: 7%;
       })
   }
 }

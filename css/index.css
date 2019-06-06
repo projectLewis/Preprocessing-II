@@ -389,15 +389,6 @@ header {
     justify-content: center;
   }
 }
-.home .content-pick .destination {
-  width: 30%;
-  margin-bottom: 30px;
-}
-@media screen and (max-width: 500px) {
-  .home .content-pick .destination {
-    width: 80%;
-  }
-}
 .topSection {
   border-bottom: 2px dashed #C0C0C0;
 }
@@ -406,18 +397,32 @@ header {
     border-bottom: 1px dashed #C0C0C0;
   }
 }
-.destination button {
+.destination {
+  width: 30%;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 500px) {
+  .destination {
+    width: 80%;
+  }
+}
+.destination .button {
+  text-align: center;
   background-color: #008080;
   border-style: none;
-  border-radius: 5%;
+  border-radius: 10px;
   padding: 1rem 4rem;
   color: #FFFFFF;
   font-size: 1.6rem;
 }
+.destination .button a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
 @media screen and (max-width: 500px) {
-  .destination button {
+  .destination .button {
     background-color: #17A2B8;
-    font-size: 1rem;
-    padding: 0.2rem 2rem;
+    font-size: 1.1rem;
+    padding: 0.8rem 5;
   }
 }
