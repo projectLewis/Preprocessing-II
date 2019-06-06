@@ -35,7 +35,10 @@
 
   .inverse-content {
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+    .borderBottom();
+    .smallSize({
+      .borderBottomSm();
+    });
 
     .text-content {
       padding-left: 1%;
@@ -59,9 +62,12 @@
 
   .content-pick {
     padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
+    .borderTop();
     display: flex;
     justify-content: space-between;
+    .smallSize({
+      .borderTopSm();
+    });
 
     .destination {
       width: 30%;
@@ -70,7 +76,10 @@
   }
 }
 .topSection {
-    border-bottom: 2px dashed @navigation-border;
+    .borderBottom();
+    .smallSize({
+      .borderBottomSm();
+    })
 }
 // ##TODO adjust padding on mobile
 .destination {

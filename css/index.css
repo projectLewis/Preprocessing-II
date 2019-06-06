@@ -237,6 +237,11 @@ img {
 header {
   border-bottom: 2px dashed #C0C0C0;
 }
+@media screen and (max-width: 500px) {
+  header {
+    border-bottom: 1px dashed #C0C0C0;
+  }
+}
 .topNav {
   display: flex;
   justify-content: space-between;
@@ -344,6 +349,11 @@ header {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media screen and (max-width: 500px) {
+  .home .inverse-content {
+    border-bottom: 1px dashed #C0C0C0;
+  }
+}
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
@@ -361,9 +371,14 @@ header {
 }
 .home .content-pick {
   padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 500px) {
+  .home .content-pick {
+    border-bottom: 1px dashed #C0C0C0;
+  }
 }
 .home .content-pick .destination {
   width: 30%;
@@ -371,6 +386,11 @@ header {
 }
 .topSection {
   border-bottom: 2px dashed #C0C0C0;
+}
+@media screen and (max-width: 500px) {
+  .topSection {
+    border-bottom: 1px dashed #C0C0C0;
+  }
 }
 .destination button {
   background-color: #008080;
