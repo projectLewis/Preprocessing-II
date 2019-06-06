@@ -54,6 +54,12 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    // .borderBottom();
+    .smallSize({
+      width: 100%;
+      padding-bottom: 2rem;
+      // .borderBottomSm();
+    });
 
     img {
       border-radius: 10px;
@@ -67,11 +73,17 @@
     justify-content: space-between;
     .smallSize({
       .borderTopSm();
+      padding-top: 0;
+      flex-wrap: wrap;
+      justify-content: center;
     });
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      .smallSize({
+        width: 80%;
+      })
     }
   }
 }
