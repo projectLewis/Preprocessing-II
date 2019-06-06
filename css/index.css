@@ -270,6 +270,24 @@ header {
     padding-left: 0;
   }
 }
+.topNav a:hover {
+  animation: rock 400ms infinite ease-in-out;
+}
+@keyframes rock {
+  0%,
+  100% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: scale(0.95);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: scale(0.95);
+  }
+}
 .subNav {
   display: flex;
   justify-content: flex-end;

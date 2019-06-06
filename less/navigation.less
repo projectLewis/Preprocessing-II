@@ -28,6 +28,15 @@ header {
             padding-left: 0;
         });
     }
+    a:hover {
+        animation: rock 400ms infinite ease-in-out;
+        @keyframes rock {
+            0%, 100% { transform: rotate(-10deg); }
+            20% {transform:scale(.95);}
+            50% { transform: rotate(10deg); }
+            80% {transform:scale(.95);}
+          }
+    }
 }
 .subNav {
     display: flex;
