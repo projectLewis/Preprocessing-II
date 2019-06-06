@@ -321,6 +321,7 @@ header {
 }
 @media screen and (max-width: 500px) {
   .home .content-section {
+    margin: 15px 0;
     justify-content: center;
   }
 }
@@ -351,6 +352,8 @@ header {
 }
 @media screen and (max-width: 500px) {
   .home .inverse-content {
+    flex-direction: column-reverse;
+    padding-bottom: 15px;
     border-bottom: 1px dashed #C0C0C0;
   }
 }
@@ -370,6 +373,7 @@ header {
   .home .content-destination {
     width: 100%;
     padding-bottom: 2rem;
+    margin-bottom: 0px;
   }
 }
 .home .content-destination img {
@@ -403,6 +407,7 @@ header {
 }
 @media screen and (max-width: 500px) {
   .destination {
+    margin-top: 15px;
     width: 80%;
   }
 }

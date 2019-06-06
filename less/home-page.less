@@ -7,6 +7,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
       .smallSize({
+        margin: 15px 0;
         // flex-wrap: nowrap;
         justify-content: center;
       });
@@ -37,6 +38,8 @@
     padding-bottom: 30px;
     .borderBottom();
     .smallSize({
+      flex-direction: column-reverse;
+      padding-bottom: 15px;
       .borderBottomSm();
     });
 
@@ -54,11 +57,10 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-    // .borderBottom();
     .smallSize({
       width: 100%;
       padding-bottom: 2rem;
-      // .borderBottomSm();
+      margin-bottom: 0px;
     });
 
     img {
@@ -90,6 +92,7 @@
   width: 30%;
   margin-bottom: 30px;
   .smallSize({
+    margin-top: 15px;
     width: 80%;
   });
   .button {
