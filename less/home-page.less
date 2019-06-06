@@ -73,10 +73,12 @@
     .borderTop();
     display: flex;
     justify-content: space-between;
+    .mediumSize({
+      flex-wrap: wrap;
+    });
     .smallSize({
       .borderTopSm();
       padding-top: 0;
-      flex-wrap: wrap;
       justify-content: center;
     });
   }
@@ -94,13 +96,15 @@
 .destination {
   width: 30%;
   margin-bottom: 30px;
+  .mediumSize({
+    width: 48%;
+  });
   .smallSize({
     margin-bottom: 0px;
     margin-top: 15px;
     width: 80%;
   });
   .button {
-    // justify-content: center;
     text-align: center;
     background-color: @btnColor;
     border-style: none;
@@ -113,16 +117,27 @@
         color: @white;
       }
       .smallSize({
-        // width: 50%;
         background-color: @button-bg;
         font-size: 1.1rem;
         padding: .8rem 5;
-        // border-radius: 7%;
       })
   }
 }
 .lastDestination {
+  .mediumSize({
+    width: 100%;
+    // margin: 15px auto;
+      .button {
+        margin: auto;
+        width: 50%;
+      }
+  });
   .smallSize({
+    width: 80%;
     margin-bottom: 15px;
+    .button {
+      // justify-self: center;
+      width: 100%;
+    }
   });
 }
