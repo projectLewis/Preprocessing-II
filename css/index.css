@@ -418,6 +418,7 @@ header {
 }
 @media screen and (max-width: 500px) {
   .destination {
+    margin-bottom: 0px;
     margin-top: 15px;
     width: 80%;
   }
@@ -440,5 +441,10 @@ header {
     background-color: #17A2B8;
     font-size: 1.1rem;
     padding: 0.8rem 5;
+  }
+}
+@media screen and (max-width: 500px) {
+  .lastDestination {
+    margin-bottom: 15px;
   }
 }
