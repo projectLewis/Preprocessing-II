@@ -15,17 +15,35 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: @largeFontH1;
+  .mediumSize({
+    font-size: @mediumFontH1;
+  });
+  .smallSize({
+    font-size: @smallFontH1;
+  });
 }
 
 h2 {
-  font-size: 3.2rem;
+  font-size: @largeFontH2;
   padding-bottom: 10px;
+  .mediumSize({
+    font-size: @mediumFontH2;
+  });
+  .smallSize({
+    font-size: @smallFontH2;
+  });
 }
 
 h4 {
-  font-size: 2.5rem;
+  font-size: @largeFontH4;
   padding-bottom: 10px;
+  .mediumSize({
+    font-size: @mediumFontH4;
+  });
+  .smallSize({
+    font-size: @smallFontH4;
+  });
 }
 
 p {
