@@ -39,8 +39,27 @@ img {
   height: auto;
 }
 
+#viewSettings {
+  // .largeSize({
+  //   max-width: 1000px;
+  //   width: 100%;
+  //   margin: 0 auto;
+  //   background-color: red;
+  // });
+  .mediumSize({
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: blue;
+  });
+  .smallSize({
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: yellow;
+  });
+}
+
 .container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
+  padding: 0 @paddingSides;
 }

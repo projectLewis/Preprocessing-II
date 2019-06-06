@@ -163,10 +163,44 @@ img {
   max-width: 100%;
   height: auto;
 }
+@media screen and (max-width: 800px) {
+  #viewSettings {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: blue;
+  }
+}
+@media screen and (max-width: 500px) {
+  #viewSettings {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: yellow;
+  }
+}
 .container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
+  padding: 0 9rem;
+}
+header {
+  border-bottom: 2px dashed #C0C0C0;
+}
+.topNav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 3rem 11rem 3rem 0;
+}
+.topNav h2 {
+  padding-left: 9rem;
+}
+.subNav {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+}
+.subNav a {
+  padding-left: 3rem;
 }
 .footer {
   width: 100%;

@@ -1,1 +1,10 @@
 // Mixins in here
+.largeSize(@rules) {
+    @media screen and (min-width: 801px) {@rules(); }
+}
+.mediumSize(@rules) {
+    @media screen and (max-width: 800px) {@rules(); }
+}
+.smallSize(@rules) {
+    @media screen and (max-width: 500px) {@rules(); }
+}

@@ -1,1 +1,24 @@
 // Navigation Styles here
+header {
+    // div {
+        border-bottom: 2px dashed @navigation-border;
+    // }
+}
+.topNav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: @paddingVert @paddingSides + 2rem @paddingVert 0;
+    // padding-right: @paddingSides + 2rem;
+    h2 {
+        padding-left: @paddingSides;
+    }
+}
+.subNav {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+        a {
+            padding-left: 3rem;
+        }
+}
