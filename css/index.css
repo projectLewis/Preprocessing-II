@@ -159,6 +159,16 @@ p {
   font-size: 1.6rem;
   padding-bottom: 10px;
 }
+@media screen and (max-width: 800px) {
+  p {
+    font-size: 1.35rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  p {
+    font-size: 1rem;
+  }
+}
 img {
   max-width: 100%;
   height: auto;
@@ -263,5 +273,16 @@ header {
   margin-bottom: 30px;
 }
 .destination button {
-  background-color: #17A2B8;
+  background-color: #008080;
+  border-style: none;
+  border-radius: 5%;
+  padding: 1rem 4rem;
+  color: #FFFFFF;
+  font-size: 1.6rem;
+}
+@media screen and (max-width: 500px) {
+  .destination button {
+    background-color: #17A2B8;
+    font-size: 1rem;
+  }
 }

@@ -30,8 +30,14 @@ h4 {
 
 p {
   line-height: 1.5;
-  font-size: 1.6rem;
+  font-size: @largeFont;
   padding-bottom: 10px;
+  .mediumSize({
+    font-size: @mediumFont;
+  });
+  .smallSize({
+    font-size: @smallFont;
+  });
 }
 
 img {

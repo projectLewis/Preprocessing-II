@@ -63,6 +63,15 @@
 
 .destination {
   button {
-    background-color: @button-bg;
+    background-color: @btnColor;
+    border-style: none;
+    border-radius: 5%;
+    padding: 1rem 4rem;
+    color: @white;
+    font-size: @largeFont;
+      .smallSize({
+        background-color: @button-bg;
+        font-size: @smallFont;
+      })
   }
 }
