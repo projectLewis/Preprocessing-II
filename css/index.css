@@ -222,6 +222,16 @@ img {
 .container {
   padding: 0 9rem;
 }
+@media screen and (max-width: 800px) {
+  .container {
+    padding: 0 4rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
 header {
   border-bottom: 2px dashed #C0C0C0;
 }
@@ -231,8 +241,30 @@ header {
   flex-wrap: nowrap;
   padding: 3rem 12rem 1rem 0;
 }
+@media screen and (max-width: 800px) {
+  .topNav {
+    padding: 3rem 7rem 1rem 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .topNav {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 3rem 1.5rem 1rem 0;
+  }
+}
 .topNav h2 {
   padding-left: 9rem;
+}
+@media screen and (max-width: 800px) {
+  .topNav h2 {
+    padding-left: 4rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .topNav h2 {
+    padding-left: none;
+  }
 }
 .subNav {
   display: flex;
@@ -244,6 +276,18 @@ header {
   font-size: 1.6rem;
   text-decoration: none;
   color: #212529;
+}
+@media screen and (max-width: 800px) {
+  .subNav a {
+    font-size: 1.35rem;
+    padding-left: 2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .subNav a {
+    font-size: 1rem;
+    padding-left: 1rem;
+  }
 }
 .footer {
   width: 100%;
@@ -262,13 +306,28 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media screen and (max-width: 500px) {
+  .home .content-section {
+    justify-content: center;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media screen and (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media screen and (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -314,5 +373,6 @@ header {
   .destination button {
     background-color: #17A2B8;
     font-size: 1rem;
+    padding: 0.2rem 2rem;
   }
 }

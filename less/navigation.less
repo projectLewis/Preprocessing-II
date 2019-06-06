@@ -9,9 +9,22 @@ header {
     justify-content: space-between;
     flex-wrap: nowrap;
     padding: @paddingVert @paddingSides+3rem 1rem 0;
-    // padding-right: @paddingSides + 2rem;
+        .mediumSize({
+            padding: @paddingVert @paddingSidesMed+3rem 1rem 0;
+        });
+        .smallSize({
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: @paddingVert @paddingSidesSm 1rem 0;
+    });
     h2 {
         padding-left: @paddingSides;
+        .mediumSize({
+            padding-left: @paddingSidesMed;
+        });
+        .smallSize({
+            padding-left: none;;
+        });
     }
 }
 .subNav {
@@ -23,5 +36,13 @@ header {
             font-size: @largeFont;
             text-decoration: none;
             color: @font-color;
+            .mediumSize({
+                font-size: @mediumFont;
+                padding-left: 2rem;
+              });
+              .smallSize({
+                font-size: @smallFont;
+                padding-left: 1rem;
+              });
         }
 }
