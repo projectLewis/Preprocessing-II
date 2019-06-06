@@ -218,7 +218,7 @@ img {
     max-width: 500px;
     width: 100%;
     margin: 0 auto;
-    background-color: yellow;
+    background-color: #FFFFFF;
   }
 }
 .container {
@@ -411,6 +411,9 @@ header {
   .topSection {
     border-bottom: 1px dashed #C0C0C0;
   }
+}
+.topSection h2 {
+  padding-top: 15px;
 }
 .destination {
   width: 30%;
